@@ -8,6 +8,7 @@ const generate = (e) => {
 	const url = `https://api.qrserver.com/v1/create-qr-code/?data=${qrdata}&size=250*250`;
 
 	document.getElementById("image-container").src = url;
+	document.getElementById("image-container").style.visibility = "visible";
 };
 
 btn.addEventListener("click", (e) => {
